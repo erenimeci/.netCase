@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KOC.Core", "KOC.Core\KOC.Core.csproj", "{2E3643DD-4DE8-4C02-BD50-887948E022AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E967C74F-ADD0-4C59-965F-FFE257FC3309}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KOC.Model", "KOC.Model\KOC.Model.csproj", "{379DDB79-8E5E-4FC9-BB73-391E0138101C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KOC.DataAccess", "KOC.DataAccess\KOC.DataAccess.csproj", "{F43F5940-FDE2-40C3-877B-54902AF6BA81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KOC.Business", "KOC.Business\KOC.Business.csproj", "{A4231422-AA02-417D-9006-8387CB48FF9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KOC.MVC.UI", "KOC.MVC.UI\KOC.MVC.UI.csproj", "{E7BCE71B-6643-44D0-8B3D-1967DEA46A35}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E3643DD-4DE8-4C02-BD50-887948E022AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E3643DD-4DE8-4C02-BD50-887948E022AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E3643DD-4DE8-4C02-BD50-887948E022AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E3643DD-4DE8-4C02-BD50-887948E022AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{379DDB79-8E5E-4FC9-BB73-391E0138101C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{379DDB79-8E5E-4FC9-BB73-391E0138101C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{379DDB79-8E5E-4FC9-BB73-391E0138101C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{379DDB79-8E5E-4FC9-BB73-391E0138101C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F43F5940-FDE2-40C3-877B-54902AF6BA81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F43F5940-FDE2-40C3-877B-54902AF6BA81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F43F5940-FDE2-40C3-877B-54902AF6BA81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F43F5940-FDE2-40C3-877B-54902AF6BA81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4231422-AA02-417D-9006-8387CB48FF9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4231422-AA02-417D-9006-8387CB48FF9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4231422-AA02-417D-9006-8387CB48FF9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4231422-AA02-417D-9006-8387CB48FF9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7BCE71B-6643-44D0-8B3D-1967DEA46A35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7BCE71B-6643-44D0-8B3D-1967DEA46A35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7BCE71B-6643-44D0-8B3D-1967DEA46A35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7BCE71B-6643-44D0-8B3D-1967DEA46A35}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,36 @@
+﻿@model KOC.MVC.UI.Models.ViewModel.ExamQuestionViewModel
+
+@{
+    ViewBag.Title = "ListExam";
+}
+
+<h2>ListExam</h2>
+
+
+
+<table border="1">
+    @{int i = 1;}
+    @foreach (var item in Model.Exams)
+    {
+        <tr>
+            <td>
+                @i
+            </td>
+            <td>
+                @Html.ActionLink(@item.ExamName, "EnterExam", "Exam", new { ID = item.ExamID.ToString() }, new { @class = "btn btn-success btn-xs" })
+            </td>
+            <td>
+                @item.CreatedTime
+            </td>
+            <td>
+                @Html.ActionLink("Sil", "DeleteExam", "Exam", new { ID = item.ExamID.ToString() }, new { @class = "btn btn-danger btn-xs" })
+            </td>
+        </tr>
+        i++;
+    }
+</table>
+
+
+    
+    
+    

@@ -1,0 +1,95 @@
+﻿@model KOC.MVC.UI.Models.ViewModel.EnterExamViewModel
+
+@{
+    ViewBag.Title = "EnterExam";
+}
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<h2 id="examName">@Model.Exam.ExamName</h2>
+
+<textarea rows="10" cols="300" class="form-control">
+    @Model.Exam.ExamContent
+</textarea>
+
+
+
+<input type="text" id="ExamName" name="ExamName" hidden="hidden" />
+<input type="text" id="ExamContent" name="ExamContent" hidden="hidden" />
+
+<br />
+<br />
+<br />
+@{int i = 1;}
+
+
+@using (Ajax.BeginForm("EnterExam", "Exam", FormMethod.Post, new AjaxOptions { OnSuccess = "Success" }))
+{
+
+
+
+
+
+
+}
+
+@foreach (var item in Model.Questions)
+{
+
+    <div class="col-xs-6 col-md-6 form-group">
+
+        <input class="col-xs-12 col-md-12 form-group" type="text" value="@item.QuestionText" disabled />
+
+        @{string id = "question" + i + "choice";}
+
+        <input type="radio" data-choice="A" class="col-xs-2 col-md-2 form-group" name="@id" id="@id+1" value="@item.choiceFirst"><br>
+        <label for="@id+1" class="col-xs-10 col-md-10 form-group">@item.choiceFirst</label>
+
+        <input type="radio" data-choice="B" class="col-xs-2 col-md-2 form-group" name="@id" id="@id+2" value="@item.choiceSecond"><br>
+        <label for="@id+2" class="col-xs-10 col-md-10 form-group">@item.choiceSecond</label>
+
+        <input type="radio" data-choice="C" class="col-xs-2 col-md-2 form-group" name="@id" id="@id+3" value="@item.choiceThird"><br>
+        <label for="@id+3" class="col-xs-10 col-md-10 form-group">@item.choiceThird</label>
+
+        <input type="radio" data-choice="D" class="col-xs-2 col-md-2 form-group" name="@id" id="@id+4" value="@item.choiceFourth"><br>
+        <label for="@id+4" class="col-xs-10 col-md-10 form-group">@item.choiceFourth</label>
+    </div>
+
+
+        i++;
+}
+
+<input type="submit" id="FinishExam" value="Sınavı Tamamla" class="btn btn-primary" />
+
+
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $("#FinishExam").click(function () {
+            var answers = [];
+            for (var i = 1; i < 5; i++) {
+                answers.push($("input[name='question" + i + "choice']:checked").attr("data-choice"));
+            }
+
+            $.ajax({
+                url: "/Exam/CheckAnswers/",
+                type: "POST",
+                dataType: "json",
+                data: { 'answers': answers.join(), 'ID': '@Model.Exam.ExamID' },
+                success: function (data) {
+                    for (var i = 1; i < 5; i++) {
+                        var rbID = $("input[name='question" + i + "choice']:checked").attr("id");
+                        if (data[i - 1]) {
+                            $("label[for='" + rbID + "']").css("background-color", "green");
+                        }
+                        else {
+                            $("label[for='" + rbID + "']").css("background-color", "red");
+                        }
+                    }
+                },
+                error: function (err) {
+                    alert(err);
+                }
+            });
+        });
+    });
+</script>

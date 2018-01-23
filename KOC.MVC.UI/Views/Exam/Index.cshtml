@@ -1,0 +1,83 @@
+﻿@model KOC.MVC.UI.Models.ViewModel.ArticleViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<br /><br />
+
+<form method="post" action="@Url.Action("Index", "Exam")">
+    @Html.DropDownList("ContentTitle", Model.ArticleTitle , null, new { @class = "form-control",})
+<input type="submit" id="ArticlePost" hidden="hidden" />
+</form>
+
+@Html.TextArea("ArticleContent", Model.ArticleContent != null ? Model.ArticleContent : null,10,300, new { @class = "form-control" })
+<br /><br />
+
+<form method="post" action="@Url.Action("SaveExam", "Exam")">
+
+    <input type="text" id="ExamName" name="ExamName" hidden="hidden" />
+    <input type="text" id="ExamContent" name="ExamContent" hidden="hidden" />
+
+    @for (int i = 1; i <= 4; i++)
+    {
+        string soru = "Soru ";
+        @Html.TextBox("Question" + i, null, new { @class = "form-control form-control-lg", placeholder = soru })<br />
+        <div class="row">
+            <div class="col-xs-6 col-md-6 form-group">
+                @Html.TextBox("Question" + i + "Choice1", null, new { @class = "form-control form-control-lg", placeholder = "A)" })
+            </div>
+            <div class="col-xs-6 col-md-6 form-group">
+                @Html.TextBox("Question" + i + "Choice2", null, new { @class = "form-control form-control-lg", placeholder = "B)" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-md-6 form-group">
+                @Html.TextBox("Question" + i + "Choice3", null, new { @class = "form-control form-control-lg", placeholder="C)" })
+            </div>
+            <div class="col-xs-6 col-md-6 form-group">
+                @Html.TextBox("Question" + i + "Choice4", null, new { @class = "form-control form-control-lg", placeholder="D)" })
+            </div>
+        </div>
+        string name = "Question" + i + "CorrectChoice";
+
+        <select name="@name" id="Question1CorrectChoice" class="form-control">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select><br /><hr />
+    }
+
+
+
+    <input type="submit" id="ExamPost" value="Sınav Oluştur" class="btn btn-primary" />
+
+</form>
+
+
+
+<script>
+    var deneme = "a";
+    $(document).ready(function () {
+
+        //$("#ContentTitle option[value='quietest']").attr("selected", "selected");
+            console.log(deneme);
+        
+        $("#ContentTitle").change(function () {
+            deneme = $("#ContentTitle option:selected").text()
+            $("#ArticlePost").click()
+        });
+
+
+        $("#ExamPost").click(function () {
+            $("#ExamName").val($("#ContentTitle").val())
+            $("#ExamContent").val($("#ArticleContent").val())
+
+            //alert($("#ContentTitle option:selected").text())
+            //alert($("#ExamContent").val())
+        });
+
+    });
+</script>
+

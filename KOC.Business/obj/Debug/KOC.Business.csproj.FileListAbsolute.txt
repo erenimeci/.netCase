@@ -1,0 +1,13 @@
+C:\Users\CihaNalan\Documents\Visual Studio 2013\Projects\konusarakOgrenCase\KOC.Business\obj\Debug\KOC.Business.csprojResolveAssemblyReference.cache
+C:\Users\CihaNalan\Documents\Visual Studio 2013\Projects\konusarakOgrenCase\KOC.Business\bin\Debug\KOC.Business.dll
+C:\Users\CihaNalan\Documents\Visual Studio 2013\Projects\konusarakOgrenCase\KOC.Business\bin\Debug\KOC.Business.pdb
+C:\Users\CihaNalan\Documents\Visual Studio 2013\Projects\konusarakOgrenCase\KOC.Business\bin\Debug\KOC.Core.dll
+C:\Users\CihaNalan\Documents\Visual Studio 2013\Projects\konusarakOgrenCase\KOC.Business\bin\Debug\KOC.DataAccess.dll
+C:\Users\CihaNalan\Documents\Visual Studio 2013\Projects\konusarakOgrenCase\KOC.Business\bin\Debug\KOC.Model.dll
+C:\Users\CihaNalan\Documents\Visual Studio 2013\Projects\konusarakOgrenCase\KOC.Business\bin\Debug\EntityFramework.dll
+C:\Users\CihaNalan\Documents\Visual Studio 2013\Projects\konusarakOgrenCase\KOC.Business\bin\Debug\KOC.Core.pdb
+C:\Users\CihaNalan\Documents\Visual Studio 2013\Projects\konusarakOgrenCase\KOC.Business\bin\Debug\KOC.DataAccess.pdb
+C:\Users\CihaNalan\Documents\Visual Studio 2013\Projects\konusarakOgrenCase\KOC.Business\bin\Debug\KOC.Model.pdb
+C:\Users\CihaNalan\Documents\Visual Studio 2013\Projects\konusarakOgrenCase\KOC.Business\bin\Debug\EntityFramework.xml
+C:\Users\CihaNalan\Documents\Visual Studio 2013\Projects\konusarakOgrenCase\KOC.Business\obj\Debug\KOC.Business.dll
+C:\Users\CihaNalan\Documents\Visual Studio 2013\Projects\konusarakOgrenCase\KOC.Business\obj\Debug\KOC.Business.pdb

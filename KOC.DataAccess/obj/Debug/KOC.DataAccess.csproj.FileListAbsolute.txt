@@ -1,0 +1,14 @@
+c:\users\cihanalan\documents\visual studio 2013\Projects\konusarakOgrenCase\KOC.DataAccess\obj\Debug\KOC.DataAccess.csprojResolveAssemblyReference.cache
+c:\users\cihanalan\documents\visual studio 2013\Projects\konusarakOgrenCase\KOC.DataAccess\bin\Debug\KOC.DataAccess.dll.config
+c:\users\cihanalan\documents\visual studio 2013\Projects\konusarakOgrenCase\KOC.DataAccess\bin\Debug\KOC.DataAccess.dll
+c:\users\cihanalan\documents\visual studio 2013\Projects\konusarakOgrenCase\KOC.DataAccess\bin\Debug\KOC.DataAccess.pdb
+c:\users\cihanalan\documents\visual studio 2013\Projects\konusarakOgrenCase\KOC.DataAccess\bin\Debug\EntityFramework.dll
+c:\users\cihanalan\documents\visual studio 2013\Projects\konusarakOgrenCase\KOC.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\cihanalan\documents\visual studio 2013\Projects\konusarakOgrenCase\KOC.DataAccess\bin\Debug\KOC.Core.dll
+c:\users\cihanalan\documents\visual studio 2013\Projects\konusarakOgrenCase\KOC.DataAccess\bin\Debug\KOC.Model.dll
+c:\users\cihanalan\documents\visual studio 2013\Projects\konusarakOgrenCase\KOC.DataAccess\bin\Debug\KOC.Core.pdb
+c:\users\cihanalan\documents\visual studio 2013\Projects\konusarakOgrenCase\KOC.DataAccess\bin\Debug\KOC.Model.pdb
+c:\users\cihanalan\documents\visual studio 2013\Projects\konusarakOgrenCase\KOC.DataAccess\bin\Debug\EntityFramework.xml
+c:\users\cihanalan\documents\visual studio 2013\Projects\konusarakOgrenCase\KOC.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\cihanalan\documents\visual studio 2013\Projects\konusarakOgrenCase\KOC.DataAccess\obj\Debug\KOC.DataAccess.dll
+c:\users\cihanalan\documents\visual studio 2013\Projects\konusarakOgrenCase\KOC.DataAccess\obj\Debug\KOC.DataAccess.pdb
